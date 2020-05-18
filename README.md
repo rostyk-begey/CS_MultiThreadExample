@@ -26,7 +26,7 @@ private static void RunConsumerThread()
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine($"[{Thread.CurrentThread.Name}]: consumed a value: {value} | queue size {queue.Count}");
         }
-        catch (Exception e)
+        catch
         {
             Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine($"[{Thread.CurrentThread.Name}]: queue is empty, waiting...");
