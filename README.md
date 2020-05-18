@@ -2,7 +2,7 @@
 
 The program consists of two functions that are running in different threads and a buffer queue that are shared between the thread
 
-##Data buffer
+## Data buffer
 __ConcurrentQueue__ has been used to illustrate data buffer where data is stored before being consumed by a consumer
 
 Using __ConcurrentQueue__ unlike simple __Queue__ has inbuilt thread locking that helps to keep correct work with data within multiple threads  
@@ -36,7 +36,7 @@ private static void RunConsumerThread()
 ```
 
 
-##Producer thread
+## Producer thread
 Producer thread stands for collect and produce data to buffer 
 
 ```c#
